@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>335</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    font-family: &quot;Noto Sans SC&quot;;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(68, 76, 92, 255), stop:0.5 rgba(52, 61, 70, 235), stop:1 rgba(40, 47, 56, 255));
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="new_ticket">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30); 
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="new_ticket_label">
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>New ticket</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="ticket_date">
+        <property name="styleSheet">
+         <string notr="true">    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;
+	font-size: 16pt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>17</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2024</year>
+          <month>11</month>
+          <day>4</day>
+         </datetime>
+        </property>
+        <property name="currentSectionIndex">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ticket_description">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+   background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ticket_brand">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Brand</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ticket_model">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Model</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ticket_employee">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>EmployeeId</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="ticket_status">
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+font-size: 16pt;
+background-color: #78a5a3;
+color: #FFFFFF;
+border: 1px solid #444c5c;
+border-radius: 4px;
+}
+
+QComboBox:item {
+    color: black;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Choose status</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Created</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>In progress</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Done</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Closed</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_ticket_button">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 2px solid #555B70;
+    border-radius: 7px;
+}
+
+QPushButton:hover {
+    background-color: #555B70;
+}
+
+QPushButton:pressed {
+    background-color: #363D4A;
+}</string>
+        </property>
+        <property name="text">
+         <string>Save new ticket</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/post_add_white_24dp.svg</normaloff>:/icons/icons/post_add_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res-rs.qrc"/>
+  <include location="res-rs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Save_Dialog</class>
+ <widget class="QDialog" name="Save_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    font-family: &quot;Noto Sans SC&quot;;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(68, 76, 92, 255), stop:0.5 rgba(52, 61, 70, 235), stop:1 rgba(40, 47, 56, 255));
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QFrame" name="new_ticket">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30); 
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="new_ticket_label">
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;</string>
+        </property>
+        <property name="text">
+         <string>Choose ticket to save</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="ticketId_tosave">
+        <property name="styleSheet">
+         <string notr="true">    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 1px solid #444c5c;
+    border-radius: 4px;
+font-size: 16pt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_pdf_ticket_button">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans SC</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #78a5a3;
+    color: #FFFFFF;
+    border: 2px solid #555B70;
+    border-radius: 7px;
+}
+
+QPushButton:hover {
+    background-color: #555B70;
+}
+
+QPushButton:pressed {
+    background-color: #363D4A;
+}</string>
+        </property>
+        <property name="text">
+         <string>Save to pdf</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/icons/icons/post_add_white_24dp.svg</normaloff>:/icons/icons/post_add_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
